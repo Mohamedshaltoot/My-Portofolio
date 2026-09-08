@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Edris | Data Analyst & Fabric Analytics Engineer</title>
+  
+  <!-- Bootstrap 5 CSS & FontAwesome Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <style>
+    /* ==========================================
+       BRANDING & COLOR PALETTE
+       ========================================== */
     :root {
-      --bg-dark: #070d19;
-      --card-bg: #0f1c30;
-      --border-blue: #00b4d8;
-      --accent-orange: #f97316;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
+      --bg-dark: #070d19;          /* أزرق داكن خلفية الموقع */
+      --card-bg: #0f1c30;          /* أزرق الهوية للبطاقات */
+      --neon-blue: #00b4d8;        /* أزرق نيون للحدود والألقاب */
+      --neon-orange: #f97316;      /* برتقالي نيون للخطوط والأزرار */
+      --text-main: #f8fafc;        /* نصوص أوف وايت رئيسية */
+      --text-muted: #94a3b8;       /* نصوص فرعية رمادية */
     }
+
     body {
       background-color: var(--bg-dark);
       color: var(--text-main);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding-bottom: 60px;
     }
+
     .hero-slogan {
-      color: var(--accent-orange);
+      color: var(--neon-orange);
       font-weight: 700;
       letter-spacing: 1px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
     }
+
     .profile-card {
       background: var(--card-bg);
       border-radius: 16px;
@@ -36,27 +45,28 @@
       box-shadow: 0 10px 30px rgba(0, 180, 216, 0.15);
       border: 1px solid rgba(0, 180, 216, 0.3);
     }
-  .profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent-orange);
-  box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
-  display: inline-block;
-  margin-bottom: 15px;
-    <img src="profile.jpg" alt="Mohamed Edris" class="profile-img">
-}
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--neon-orange);
+      box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+      display: inline-block;
+    }
+
     .badge-custom {
       background-color: rgba(0, 180, 216, 0.1);
-      color: var(--border-blue);
-      border: 1px solid var(--border-blue);
+      color: var(--neon-blue);
+      border: 1px solid var(--neon-blue);
       font-weight: 600;
       padding: 8px 14px;
       border-radius: 8px;
       margin: 4px;
       display: inline-block;
     }
+
     .project-card {
       background: var(--card-bg);
       border-radius: 12px;
@@ -64,17 +74,20 @@
       transition: all 0.3s ease;
       height: 100%;
     }
+
     .project-card:hover {
       transform: translateY(-5px);
-      border-color: var(--accent-orange);
+      border-color: var(--neon-orange);
       box-shadow: 0 8px 25px rgba(249, 115, 22, 0.25);
     }
+
     .project-icon {
       font-size: 2.2rem;
-      color: var(--accent-orange);
+      color: var(--neon-orange);
     }
+
     .btn-orange {
-      background-color: var(--accent-orange);
+      background-color: var(--neon-orange);
       color: #ffffff;
       font-weight: bold;
       border-radius: 8px;
@@ -83,20 +96,19 @@
       display: inline-block;
       transition: 0.2s ease;
     }
+
     .btn-orange:hover {
       background-color: #ea580c;
-      color: #fff;
+      color: #ffffff;
     }
-  .profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent-orange);
-  box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
-  display: inline-block;
-  margin-bottom: 15px;
-}
+
+    .section-title {
+      border-bottom: 2px solid var(--neon-orange);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 25px;
+      color: var(--text-main);
+    }
   </style>
 </head>
 <body>
@@ -106,13 +118,13 @@
     <div class="profile-card">
       <div class="row align-items-center text-center text-md-start">
         <div class="col-md-3 text-center mb-3 mb-md-0">
-          <!-- صورتك الشخصية المرفقة -->
-          <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Mohamedshaltoot/main/profile.jpg" alt="Mohamed Edris" class="profile-img" onerror="this.src='https://via.placeholder.com/160'">
+          <!-- الصورة الشخصية المربوطة باسم الملف profile.jpg -->
+          <img src="profile.jpg" alt="Mohamed Edris" class="profile-img" onerror="this.src='https://via.placeholder.com/160'">
         </div>
         <div class="col-md-9">
           <p class="hero-slogan mb-1">💡 ILLUMINATING HIDDEN INSIGHTS IN THE SHADOWS OF BIG DATA</p>
           <h1 class="fw-bold mb-1">MOHAMED EDRIS</h1>
-          <p class="fs-5 mb-2" style="color: var(--border-blue);">Data Analyst & BI Specialist | Fabric Analytics Engineer</p>
+          <p class="fs-5 mb-2" style="color: var(--neon-blue);">Data Analyst & BI Specialist | Fabric Analytics Engineer</p>
           <p class="text-light fs-6">
             📍 Riyadh, Saudi Arabia | ✉️ Shaltoot000@gmail.com <br>
             Certified in <b>Microsoft Fabric (DP-600)</b>, <b>Power BI (PL-300)</b>, <b>Oracle SQL</b>, and <b>PMP</b>[cite: 1]. 
