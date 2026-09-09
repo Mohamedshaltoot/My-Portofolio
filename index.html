@@ -1,235 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohamed Edris | Data Analyst & Fabric Analytics Engineer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --bg-dark: #070d19;
-      --card-bg: #0f1c30;
-      --border-blue: #00b4d8;
-      --accent-orange: #f97316;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-    }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding-bottom: 60px;
-    }
-    .hero-slogan {
-      color: var(--accent-orange);
-      font-weight: 700;
-      letter-spacing: 1px;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-    }
-    .profile-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 35px;
-      margin-top: 40px;
-      box-shadow: 0 10px 30px rgba(0, 180, 216, 0.15);
-      border: 1px solid rgba(0, 180, 216, 0.3);
-    }
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-orange);
-      box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
-    }
-    .badge-custom {
-      background-color: rgba(0, 180, 216, 0.1);
-      color: var(--border-blue);
-      border: 1px solid var(--border-blue);
-      font-weight: 600;
-      padding: 8px 14px;
-      border-radius: 8px;
-      margin: 4px;
-      display: inline-block;
-    }
-    .project-card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      border: 1px solid rgba(0, 180, 216, 0.25);
-      transition: all 0.3s ease;
-      height: 100%;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--accent-orange);
-      box-shadow: 0 8px 25px rgba(249, 115, 22, 0.25);
-    }
-    .project-icon {
-      font-size: 2.2rem;
-      color: var(--accent-orange);
-    }
-    .btn-orange {
-      background-color: var(--accent-orange);
-      color: #ffffff;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      padding: 8px 18px;
-      display: inline-block;
-      transition: 0.2s ease;
-    }
-    .btn-orange:hover {
-      background-color: #ea580c;
-      color: #fff;
-    }
-    .section-title {
-      border-bottom: 2px solid var(--accent-orange);
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 25px;
-      color: var(--text-main);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <!-- Profile & Hero Section -->
-    <div class="profile-card">
-      <div class="row align-items-center text-center text-md-start">
-        <div class="col-md-3 text-center mb-3 mb-md-0">
-          <!-- صورتك الشخصية المرفقة -->
-          <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Mohamedshaltoot/main/profile.jpg" alt="Mohamed Edris" class="profile-img" onerror="this.src='https://via.placeholder.com/160'">
+<!-- FEATURED DATA PROJECTS SECTION -->
+<div class="row g-4 mt-2">
+  
+  <!-- Project 1 -->
+  <div class="col-md-6">
+    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
+      <div>
+        <!-- صورة الداشبورد المرفوعة -->
+        <img src="sales-dashboard.png" class="img-fluid rounded mb-3" alt="Enterprise Sales & Credit Risk Dashboard">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge bg-info text-dark">Fabric & Direct Lake</span>
         </div>
-        <div class="col-md-9">
-          <p class="hero-slogan mb-1">💡 ILLUMINATING HIDDEN INSIGHTS IN THE SHADOWS OF BIG DATA</p>
-          <h1 class="fw-bold mb-1">MOHAMED EDRIS</h1>
-          <p class="fs-5 mb-2" style="color: var(--border-blue);">Data Analyst & BI Specialist | Fabric Analytics Engineer</p>
-          <p class="text-light fs-6">
-            📍 Riyadh, Saudi Arabia | ✉️ Shaltoot000@gmail.com <br>
-            Certified in <b>Microsoft Fabric (DP-600)</b>, <b>Power BI (PL-300)</b>, <b>Oracle SQL</b>, and <b>PMP</b>[cite: 1]. 
-            Over 4+ years architecting end-to-end data analytics solutions, Direct Lake semantic models, and DAX KPIs[cite: 1].
-          </p>
-          <div class="mt-3">
-            <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-info me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:Shaltoot000@gmail.com" class="btn btn-orange"><i class="fas fa-envelope"></i> Contact Me</a>
-          </div>
-        </div>
+        <h4 class="fw-bold">Enterprise Sales & Credit Risk Dashboard 📈⚡</h4>
+        <p class="text-secondary">
+          End-to-end Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and customer credit risk exposure.
+        </p>
+      </div>
+      <div class="mt-3">
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
       </div>
     </div>
-
-    <!-- Tech Stack Section -->
-    <div class="mt-5">
-      <h3 class="section-title">🛠️ MY TECH STACK</h3>
-      <div class="d-flex flex-wrap">
-        <span class="badge-custom">⚡ Microsoft Fabric (DP-600)</span>
-        <span class="badge-custom">📊 Power BI & DAX</span>
-        <span class="badge-custom">🗄️ SQL Server & T-SQL</span>
-        <span class="badge-custom">🏛️ Medallion Architecture</span>
-        <span class="badge-custom">🔗 Direct Lake & Lakehouse</span>
-        <span class="badge-custom">📈 Dataflows Gen2</span>
-        <span class="badge-custom">📋 PMP Certified</span>
-      </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="mt-5">
-      <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
-      <div class="row g-4">
-
-        <!-- Project 1 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <i class="fas fa-chart-line project-icon"></i>
-                <span class="badge bg-info text-dark">Fabric & Direct Lake</span>
-              </div>
-              <h4 class="fw-bold">Enterprise Sales & Credit Risk Dashboard 📈⚡</h4>
-              <p class="text-secondary">
-                End-to-end Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and customer credit risk exposure[cite: 1].
-              </p>
-            </div>
-            <div class="mt-3">
-              <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <i class="fas fa-boxes-stacked project-icon"></i>
-                <span class="badge bg-warning text-dark">Inventory Analytics</span>
-              </div>
-              <h4 class="fw-bold">Warehouse Inventory & SKU Velocity 📦🏎️</h4>
-              <p class="text-secondary">
-                Reconciliation and SKU classification system separating fast-moving items from dead stock, enabling data-backed re-import decisions[cite: 1].
-              </p>
-            </div>
-            <div class="mt-3">
-              <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <i class="fas fa-screwdriver-wrench project-icon"></i>
-                <span class="badge bg-info text-dark">Power BI & ERP</span>
-              </div>
-              <h4 class="fw-bold">Workshop Quality & Warranty Tracking 🛠️📋</h4>
-              <p class="text-secondary">
-                Unified operational dashboard combining technician workload, spare parts availability, and warranty status to optimize job completion timelines[cite: 1].
-              </p>
-            </div>
-            <div class="mt-3">
-              <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="col-md-6">
-          <div class="project-card p-4 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <i class="fas fa-truck-fast project-icon"></i>
-                <span class="badge bg-warning text-dark">GPS Logistics</span>
-              </div>
-              <h4 class="fw-bold">Shipment Tracking & Workforce Optimization 🚛⏱️</h4>
-              <p class="text-secondary">
-                GPS-based transit model analyzing container stops to estimate ETAs and optimize warehouse labor allocation during container unloading workflows[cite: 1].
-              </p>
-            </div>
-            <div class="mt-3">
-              <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Certifications Section -->
-    <div class="mt-5">
-      <h3 class="section-title">📜 CERTIFICATIONS</h3>
-      <ul class="list-group list-group-flush bg-transparent">
-        <li class="list-group-item bg-transparent text-light border-secondary">🥇 <b>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</b> - Aug 2026[cite: 1]</li>
-        <li class="list-group-item bg-transparent text-light border-secondary">🥇 <b>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</b> - Nov 2024[cite: 1]</li>
-        <li class="list-group-item bg-transparent text-light border-secondary">🥇 <b>Oracle Database SQL Certified Associate</b> - Mar 2025[cite: 1]</li>
-        <li class="list-group-item bg-transparent text-light border-secondary">🥇 <b>Project Management Professional (PMP)</b> - May 2024[cite: 1]</li>
-      </ul>
-    </div>
-
   </div>
 
-</body>
-</html>
+  <!-- Project 2 -->
+  <div class="col-md-6">
+    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
+      <div>
+        <img src="warehouse-inventory.png" class="img-fluid rounded mb-3" alt="Warehouse Inventory Dashboard">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge bg-warning text-dark">Inventory Analytics</span>
+        </div>
+        <h4 class="fw-bold">Warehouse Inventory & SKU Velocity 📦🏎️</h4>
+        <p class="text-secondary">
+          Reconciliation and SKU classification system separating fast-moving items from dead stock, enabling data-backed re-import decisions.
+        </p>
+      </div>
+      <div class="mt-3">
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="col-md-6">
+    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
+      <div>
+        <img src="workshop-quality.png" class="img-fluid rounded mb-3" alt="Workshop Quality Dashboard">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge bg-info text-dark">Power BI & ERP</span>
+        </div>
+        <h4 class="fw-bold">Workshop Quality & Warranty Tracking 🛠️📋</h4>
+        <p class="text-secondary">
+          Unified operational dashboard combining technician workload, spare parts availability, and warranty status to optimize job completion timelines.
+        </p>
+      </div>
+      <div class="mt-3">
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="col-md-6">
+    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
+      <div>
+        <img src="shipment-tracking.png" class="img-fluid rounded mb-3" alt="Shipment Tracking Dashboard">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="badge bg-warning text-dark">GPS Logistics</span>
+        </div>
+        <h4 class="fw-bold">Shipment Tracking & Workforce Optimization 🚚⏰</h4>
+        <p class="text-secondary">
+          GPS-based transit model analyzing container stops to estimate ETAs and optimize warehouse labor allocation during container unloading workflows.
+        </p>
+      </div>
+      <div class="mt-3">
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
