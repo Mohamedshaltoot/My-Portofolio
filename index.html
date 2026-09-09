@@ -28,7 +28,7 @@
       color: var(--text-main);
       font-family: 'Tajawal', 'Inter', sans-serif;
       margin: 0;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
     }
 
     .dashboard-header {
@@ -111,7 +111,7 @@
     .project-img-wrapper {
       position: relative;
       overflow: hidden;
-      height: 220px;
+      height: 210px;
       background-color: #151515;
     }
 
@@ -163,18 +163,19 @@
       color: var(--accent-orange);
     }
 
-    .footer-contact {
+    /* قسم التواصل السفلي بالتصميم الأصلي */
+    .contact-footer {
       background-color: var(--card-bg);
-      border-top: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 35px 20px;
-      margin-top: 60px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Navbar -->
+  <!-- Dashboard Navbar Header -->
   <header class="dashboard-header d-flex justify-content-between align-items-center mb-4">
     <div class="brand-title">
       <i class="fa-solid fa-chart-line text-warning me-2"></i> Mohamed Edris <span>.Analytics</span>
@@ -186,12 +187,12 @@
 
   <div class="container-fluid px-md-5">
     
-    <!-- Profile Section -->
+    <!-- Profile Header Section -->
     <div class="row mb-5">
       <div class="col-12">
         <div class="profile-card d-md-flex align-items-center">
           <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Mohamedshaltoot/main/avatar.jpg" 
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png';"
+               onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png';" 
                alt="Eng. Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms-md-4">
           <div>
             <h2 class="fw-bold mb-1">Eng. Mohamed Edris</h2>
@@ -204,7 +205,7 @@
       </div>
     </div>
 
-    <!-- Section Title -->
+    <!-- Analytics Projects Section -->
     <div class="row">
       <div class="col-12">
         <div class="section-title">📊 معرض الحلول والتحليلات المؤسسية (Enterprise Analytics Gallery)</div>
@@ -214,12 +215,12 @@
     <!-- Projects Grid -->
     <div class="row g-4">
 
-      <!-- Project 1: Enterprise Sales Performance -->
+      <!-- Project 1: Enterprise Sales & Credit Risk Analytics -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
             <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Enterprise-Sales-Credit-Risk-Analytics/main/Q1%20Overview_2.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600';"
+                 onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600';" 
                  class="project-img" alt="Sales Performance Dashboard">
           </div>
           <div class="card-body">
@@ -240,12 +241,12 @@
         </div>
       </div>
 
-      <!-- Project 2: Workforce Analytics -->
+      <!-- Project 2: Workforce Analytics Stability Insights -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
             <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Workforce-Analytics-Stability-Insights/main/Overview.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600';"
+                 onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600';" 
                  class="project-img" alt="Human Capital Sustainability">
           </div>
           <div class="card-body">
@@ -265,12 +266,12 @@
         </div>
       </div>
 
-      <!-- Project 3: Pizza Sales Analysis -->
+      <!-- Project 3: Pizza Sales Performance Analysis -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
             <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Pizza-Sales-Performance-Analysis/main/OVERVIEW.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600';"
+                 onerror="this.src='https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600';" 
                  class="project-img" alt="Pizza Sales Overview">
           </div>
           <div class="card-body">
@@ -290,12 +291,12 @@
         </div>
       </div>
 
-      <!-- Project 4: Emergency Room Visits -->
+      <!-- Project 4: Patients Emergency Room Visit Report -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
             <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Patients-Emergency-Room-Visit-Report/main/Patients%20Overview.jpg" 
-                 onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600';"
+                 onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600';" 
                  class="project-img" alt="Healthcare Analytics">
           </div>
           <div class="card-body">
@@ -320,7 +321,7 @@
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
             <img src="https://raw.githubusercontent.com/Mohamedshaltoot/NYC-Collisions-Report/main/nyc-overview.png.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1508873696983-2df515122519?w=600';"
+                 onerror="this.src='https://images.unsplash.com/photo-1508873696983-2df515122519?w=600';" 
                  class="project-img" alt="NYC Collisions Report">
           </div>
           <div class="card-body">
@@ -342,29 +343,26 @@
 
     </div>
 
-    <!-- Bottom Contact Section (أيادي التواصل بأسفل الصفحة) -->
-    <div class="footer-contact text-center">
-      <h4 class="fw-bold mb-3">📬 دعنا نتواصل (Get In Touch)</h4>
-      <p class="text-secondary mb-4 small">مهتم بتنفيذ مشاريع تحليل البيانات، إعداد لوحات Power BI، وبناء نماذج الأعمال.</p>
-      
-      <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="https://github.com/Mohamedshaltoot/Mohamedshaltoot/raw/main/CV.pdf" target="_blank" class="btn btn-custom-orange px-4 py-2">
-          <i class="fa-solid fa-file-arrow-down me-1"></i> تحميل السيرة الذاتية (CV)
+    <!-- أزرار التواصل وأدوات الاتصال (في الأسفل) -->
+    <div class="contact-footer text-center">
+      <h5 class="fw-bold mb-3">تواصل معي (Contact & Professional Links)</h5>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="https://github.com/Mohamedshaltoot/Mohamedshaltoot/raw/main/CV.pdf" target="_blank" class="btn btn-custom-orange px-3 py-2">
+          <i class="fa-solid fa-file-arrow-down me-1"></i> CV / السيرة الذاتية
         </a>
-        <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-custom px-4 py-2">
+        <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-custom px-3 py-2">
           <i class="fa-brands fa-linkedin text-primary me-1"></i> LinkedIn
         </a>
-        <a href="https://wa.me/966554057993" target="_blank" class="btn btn-outline-custom px-4 py-2">
+        <a href="https://wa.me/966554057993" target="_blank" class="btn btn-outline-custom px-3 py-2">
           <i class="fa-brands fa-whatsapp text-success me-1"></i> واتساب
         </a>
-        <a href="mailto:mohamed.edris.alessa@gmail.com" class="btn btn-outline-custom px-4 py-2">
-          <i class="fa-solid fa-envelope text-warning me-1"></i> البريد الإلكتروني
+        <a href="mailto:mohamed.edris.alessa@gmail.com" class="btn btn-outline-custom px-3 py-2">
+          <i class="fa-solid fa-envelope text-warning me-1"></i> إيميل
         </a>
-        <a href="tel:+966554057993" class="btn btn-outline-custom px-4 py-2">
-          <i class="fa-solid fa-phone text-info me-1"></i> 0554057993
+        <a href="tel:+966554057993" class="btn btn-outline-custom px-3 py-2">
+          <i class="fa-solid fa-phone text-success me-1"></i> 0554057993
         </a>
       </div>
-      <div class="text-muted mt-4 small">© 2026 Mohamed Edris. All Rights Reserved.</div>
     </div>
 
   </div>
