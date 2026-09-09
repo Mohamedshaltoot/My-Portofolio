@@ -1,81 +1,187 @@
-<!-- FEATURED DATA PROJECTS SECTION -->
-<div class="row g-4 mt-2">
-  
-  <!-- Project 1 -->
-  <div class="col-md-6">
-    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
-      <div>
-        <!-- صورة الداشبورد المرفوعة -->
-        <img src="sales-dashboard.png" class="img-fluid rounded mb-3" alt="Enterprise Sales & Credit Risk Dashboard">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge bg-info text-dark">Fabric & Direct Lake</span>
-        </div>
-        <h4 class="fw-bold">Enterprise Sales & Credit Risk Dashboard 📈⚡</h4>
-        <p class="text-secondary">
-          End-to-end Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and customer credit risk exposure.
-        </p>
-      </div>
-      <div class="mt-3">
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-      </div>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Edris | Data & BI Dashboard Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Project 2 -->
-  <div class="col-md-6">
-    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
-      <div>
-        <img src="warehouse-inventory.png" class="img-fluid rounded mb-3" alt="Warehouse Inventory Dashboard">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge bg-warning text-dark">Inventory Analytics</span>
-        </div>
-        <h4 class="fw-bold">Warehouse Inventory & SKU Velocity 📦🏎️</h4>
-        <p class="text-secondary">
-          Reconciliation and SKU classification system separating fast-moving items from dead stock, enabling data-backed re-import decisions.
-        </p>
-      </div>
-      <div class="mt-3">
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-      </div>
-    </div>
-  </div>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --card-bg: #1E1E1E;
+      --card-border: #2A2A2A;
+      --accent-orange: #E56A2E;
+      --accent-orange-hover: #ff7b3a;
+      --text-main: #F5F5F5;
+      --text-muted: #A0A0A0;
+      --blue-glow: #0D6EFD;
+    }
 
-  <!-- Project 3 -->
-  <div class="col-md-6">
-    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
-      <div>
-        <img src="workshop-quality.png" class="img-fluid rounded mb-3" alt="Workshop Quality Dashboard">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge bg-info text-dark">Power BI & ERP</span>
-        </div>
-        <h4 class="fw-bold">Workshop Quality & Warranty Tracking 🛠️📋</h4>
-        <p class="text-secondary">
-          Unified operational dashboard combining technician workload, spare parts availability, and warranty status to optimize job completion timelines.
-        </p>
-      </div>
-      <div class="mt-3">
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-      </div>
-    </div>
-  </div>
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Tajawal', 'Inter', sans-serif;
+      margin: 0;
+      padding-bottom: 50px;
+    }
 
-  <!-- Project 4 -->
-  <div class="col-md-6">
-    <div class="project-card p-4 d-flex flex-column justify-content-between h-100">
-      <div>
-        <img src="shipment-tracking.png" class="img-fluid rounded mb-3" alt="Shipment Tracking Dashboard">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="badge bg-warning text-dark">GPS Logistics</span>
-        </div>
-        <h4 class="fw-bold">Shipment Tracking & Workforce Optimization 🚚⏰</h4>
-        <p class="text-secondary">
-          GPS-based transit model analyzing container stops to estimate ETAs and optimize warehouse labor allocation during container unloading workflows.
-        </p>
-      </div>
-      <div class="mt-3">
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Case Study 🔗</a>
-      </div>
-    </div>
-  </div>
+    /* Dashboard Header Navbar */
+    .dashboard-header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-</div>
+    .brand-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-main);
+    }
+
+    .brand-title span {
+      color: var(--accent-orange);
+    }
+
+    /* Profile Widget Card */
+    .profile-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--accent-orange);
+      object-fit: cover;
+    }
+
+    /* Interactive Action Buttons */
+    .btn-custom-orange {
+      background-color: var(--accent-orange);
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom-orange:hover {
+      background-color: var(--accent-orange-hover);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(229, 106, 46, 0.4);
+    }
+
+    .btn-outline-custom {
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      background-color: rgba(255, 255, 255, 0.03);
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-custom:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--accent-orange);
+      border-color: var(--accent-orange);
+    }
+
+    /* Project Cards & Hover Effects */
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent-orange);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 210px;
+      background-color: #151515;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.08);
+      filter: brightness(1.1);
+    }
+
+    /* Tech Badges */
+    .badge-tech {
+      background-color: rgba(229, 106, 46, 0.15);
+      color: var(--accent-orange);
+      border: 1px solid rgba(229, 106, 46, 0.3);
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    .badge-blue {
+      background-color: rgba(13, 110, 253, 0.15);
+      color: #6ea8fe;
+      border: 1px solid rgba(13, 110, 253, 0.3);
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-right: 4px solid var(--accent-orange);
+      padding-right: 12px;
+      margin-bottom: 25px;
+    }
+
+    .stretched-link-title {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .project-card:hover .stretched-link-title {
+      color: var(--accent-orange);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="dashboard-header d-flex justify-content-between align-items-center mb-4">
+    <div class="brand-title">
+      <i class="fa-solid fa-chart-line text-warning me-2"></i> Mohamed Edris <span>.Analytics</span>
+    </div>
+    <div>
+      <span class="badge bg-success"><i class="fa-solid fa-circle fa-beat me-1" style="font-size: 8px;"></i> المتابعة والتوظيف متاح</span>
+    </div>
+  </header>
+
+  <div class="container-fluid px-md-5">
+    
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="profile-card d-md-flex align-items-center justify-content-between">
+          <div class="d-md-flex align-items-center mb-3 mb-md-0">
+            <img src="https://i.ibb.co/xxxxxx/profile.jpg" alt="Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms
