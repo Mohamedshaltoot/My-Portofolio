@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohamed Edris | Data & BI Dashboard Portfolio</title>
+  <title>Mohamed Edris | Enterprise Analytics Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
@@ -169,19 +172,185 @@
 </head>
 <body>
 
+  <!-- Dashboard Navbar Header -->
   <header class="dashboard-header d-flex justify-content-between align-items-center mb-4">
     <div class="brand-title">
       <i class="fa-solid fa-chart-line text-warning me-2"></i> Mohamed Edris <span>.Analytics</span>
     </div>
     <div>
-      <span class="badge bg-success"><i class="fa-solid fa-circle fa-beat me-1" style="font-size: 8px;"></i> المتابعة والتوظيف متاح</span>
+      <span class="badge bg-success"><i class="fa-solid fa-circle fa-beat me-1" style="font-size: 8px;"></i> متاح للفرص والمشاريع</span>
     </div>
   </header>
 
   <div class="container-fluid px-md-5">
     
+    <!-- Profile & Header Section -->
     <div class="row mb-5">
       <div class="col-12">
         <div class="profile-card d-md-flex align-items-center justify-content-between">
           <div class="d-md-flex align-items-center mb-3 mb-md-0">
-            <img src="https://i.ibb.co/xxxxxx/profile.jpg" alt="Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms
+            <!-- الصورة الشخصية المباشرة -->
+            <img src="https://github.com/user-attachments/assets/d197c70a-a421-4fd5-8347-4af7c3c0ff5d" alt="Eng. Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms-md-4">
+            <div>
+              <h2 class="fw-bold mb-1">Eng. Mohamed Edris</h2>
+              <p class="text-muted mb-2">Senior Data Analyst & BI Specialist | Microsoft Fabric & Power BI</p>
+              <p class="small text-secondary mb-0" style="max-width: 650px; direction: ltr;">
+                4+ years of experience architecting end-to-end analytics solutions, enterprise sales dashboards, financial credit risk models, and data governance frameworks.
+              </p>
+            </div>
+          </div>
+          
+          <!-- أزرار التواصل المباشرة والسيرة الذاتية -->
+          <div class="d-flex flex-wrap gap-2 mt-3 mt-md-0">
+            <!-- زر السيرة الذاتية -->
+            <a href="https://github.com/Mohamedshaltoot/Mohamedshaltoot/raw/main/CV.pdf" target="_blank" class="btn btn-custom-orange px-3 py-2">
+              <i class="fa-solid fa-file-arrow-down me-1"></i> CV / السيرة الذاتية
+            </a>
+            <!-- زر LinkedIn -->
+            <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-brands fa-linkedin text-primary me-1"></i> LinkedIn
+            </a>
+            <!-- زر إرسال إيميل -->
+            <a href="mailto:mohamed.edris.alessa@gmail.com" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-solid fa-envelope text-warning me-1"></i> إيميل
+            </a>
+            <!-- زر الاتصال المباشر برقم الهاتف -->
+            <a href="tel:+966554057993" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-solid fa-phone text-success me-1"></i> 0554057993
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics Projects Section -->
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">📊 معرض الحلول والتحليلات المؤسسية (Enterprise Analytics Gallery)</div>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4">
+
+      <!-- Project 1: Enterprise Sales & Credit Risk Analytics -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img-wrapper">
+            <img src="https://i.ibb.co/xxxxxx/Q1_Overview.png" class="project-img" alt="Sales & Credit Risk Analytics">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">
+              <a href="https://github.com/Mohamedshaltoot/Enterprise-Sales-Credit-Risk-Analytics" target="_blank" class="stretched-link-title stretched-link">
+                Enterprise Sales & Credit Risk Analytics
+              </a>
+            </h5>
+            <p class="text-secondary small mb-3">
+              An executive-level dashboard analyzing revenue trends, order invoicing conversion rates, customer credit risk exposure ($77.9M), and salesperson efficiency.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-tech">Power BI</span>
+              <span class="badge-tech">DAX</span>
+              <span class="badge-blue">Credit Risk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Workforce Analytics Stability Insights -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img-wrapper">
+            <img src="https://i.ibb.co/xxxxxx/workforce.png" class="project-img" alt="Workforce Analytics">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">
+              <a href="https://github.com/Mohamedshaltoot/Workforce-Analytics-Stability-Insights" target="_blank" class="stretched-link-title stretched-link">
+                Workforce Analytics Stability Insights
+              </a>
+            </h5>
+            <p class="text-secondary small mb-3">
+              An HR analytics solution monitoring employee attrition rates, job satisfaction levels, distance impact, and compensation stock options.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-tech">Power BI</span>
+              <span class="badge-blue">HR Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Pizza Sales Performance Analysis -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img-wrapper">
+            <img src="https://i.ibb.co/xxxxxx/pizza.png" class="project-img" alt="Pizza Sales Analysis">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">
+              <a href="https://github.com/Mohamedshaltoot/Pizza-Sales-Performance-Analysis" target="_blank" class="stretched-link-title stretched-link">
+                Pizza Sales Performance Analysis
+              </a>
+            </h5>
+            <p class="text-secondary small mb-3">
+              An interactive sales dashboard identifying best-selling items, operational order patterns, hourly peak trends, and total sales volume.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-tech">Power BI</span>
+              <span class="badge-tech">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Patients Emergency Room Visit Report -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img-wrapper">
+            <img src="https://i.ibb.co/xxxxxx/er_report.png" class="project-img" alt="Healthcare Analytics">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">
+              <a href="https://github.com/Mohamedshaltoot/Patients-Emergency-Room-Visit-Report" target="_blank" class="stretched-link-title stretched-link">
+                Patients Emergency Room Visit Report
+              </a>
+            </h5>
+            <p class="text-secondary small mb-3">
+              Healthcare analytics dashboard evaluating ER patient volume, wait times, hospital operational efficiency, and demographic distribution.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-tech">Power BI</span>
+              <span class="badge-blue">Healthcare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: NYC Collisions Report -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-img-wrapper">
+            <img src="https://i.ibb.co/xxxxxx/nyc.png" class="project-img" alt="NYC Collisions Report">
+          </div>
+          <div class="card-body">
+            <h5 class="fw-bold mb-2">
+              <a href="https://github.com/Mohamedshaltoot/NYC-Collisions-Report" target="_blank" class="stretched-link-title stretched-link">
+                NYC Collisions Report
+              </a>
+            </h5>
+            <p class="text-secondary small mb-3">
+              An Excel analytics report assessing 63,751 NYC traffic collision records, revealing main primary risk factors and temporal accident peaks.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-tech">Excel</span>
+              <span class="badge-tech">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
