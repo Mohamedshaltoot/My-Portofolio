@@ -162,15 +162,6 @@
     .project-card:hover .stretched-link-title {
       color: var(--accent-orange);
     }
-
-    /* قسم التواصل السفلي بالتصميم الأصلي */
-    .contact-footer {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 30px;
-      margin-top: 50px;
-    }
   </style>
 </head>
 <body>
@@ -187,19 +178,19 @@
 
   <div class="container-fluid px-md-5">
     
-    <!-- Profile Header Section -->
+    <!-- Profile & Header Section -->
     <div class="row mb-5">
       <div class="col-12">
-        <div class="profile-card d-md-flex align-items-center">
-          <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Mohamedshaltoot/main/avatar.jpg" 
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png';" 
-               alt="Eng. Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms-md-4">
-          <div>
-            <h2 class="fw-bold mb-1">Eng. Mohamed Edris</h2>
-            <p class="text-muted mb-2">Senior Data Analyst & BI Specialist | Microsoft Fabric & Power BI</p>
-            <p class="small text-secondary mb-0" style="max-width: 750px; direction: ltr;">
-              4+ years of experience architecting end-to-end analytics solutions, enterprise sales dashboards, financial credit risk models, and data governance frameworks.
-            </p>
+        <div class="profile-card d-md-flex align-items-center justify-content-between">
+          <div class="d-md-flex align-items-center">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Mohamedshaltoot/main/avatar.jpg" alt="Eng. Mohamed Edris" class="profile-avatar mb-3 mb-md-0 ms-md-4">
+            <div>
+              <h2 class="fw-bold mb-1">Eng. Mohamed Edris</h2>
+              <p class="text-muted mb-2">Senior Data Analyst & BI Specialist | Microsoft Fabric & Power BI</p>
+              <p class="small text-secondary mb-0" style="max-width: 650px; direction: ltr;">
+                4+ years of experience architecting end-to-end analytics solutions, enterprise sales dashboards, financial credit risk models, and data governance frameworks.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -213,15 +204,13 @@
     </div>
 
     <!-- Projects Grid -->
-    <div class="row g-4">
+    <div class="row g-4 mb-5">
 
       <!-- Project 1: Enterprise Sales & Credit Risk Analytics -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
-            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Enterprise-Sales-Credit-Risk-Analytics/main/Q1%20Overview_2.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600';" 
-                 class="project-img" alt="Sales Performance Dashboard">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Enterprise-Sales-Credit-Risk-Analytics/main/Q1%20Overview.png" class="project-img" alt="Sales & Credit Risk Analytics">
           </div>
           <div class="card-body">
             <h5 class="fw-bold mb-2">
@@ -230,7 +219,7 @@
               </a>
             </h5>
             <p class="text-secondary small mb-3">
-              An executive-level dashboard analyzing revenue trends, order invoicing conversion rates, customer credit risk exposure, and salesperson efficiency.
+              An executive-level dashboard analyzing revenue trends, order invoicing conversion rates, customer credit risk exposure ($77.9M), and salesperson efficiency.
             </p>
             <div class="d-flex flex-wrap gap-2">
               <span class="badge-tech">Power BI</span>
@@ -245,9 +234,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
-            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Workforce-Analytics-Stability-Insights/main/Overview.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600';" 
-                 class="project-img" alt="Human Capital Sustainability">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Workforce-Analytics-Stability-Insights/main/Overview.png" class="project-img" alt="Workforce Analytics">
           </div>
           <div class="card-body">
             <h5 class="fw-bold mb-2">
@@ -270,9 +257,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
-            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Pizza-Sales-Performance-Analysis/main/OVERVIEW.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600';" 
-                 class="project-img" alt="Pizza Sales Overview">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Pizza-Sales-Performance-Analysis/main/OVERVIEW.png" class="project-img" alt="Pizza Sales Analysis">
           </div>
           <div class="card-body">
             <h5 class="fw-bold mb-2">
@@ -295,9 +280,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
-            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Patients-Emergency-Room-Visit-Report/main/Patients%20Overview.jpg" 
-                 onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600';" 
-                 class="project-img" alt="Healthcare Analytics">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/Patients-Emergency-Room-Visit-Report/main/Patients%20Overview.jpg" class="project-img" alt="Healthcare Analytics">
           </div>
           <div class="card-body">
             <h5 class="fw-bold mb-2">
@@ -320,9 +303,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card project-card h-100">
           <div class="project-img-wrapper">
-            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/NYC-Collisions-Report/main/nyc-overview.png.png" 
-                 onerror="this.src='https://images.unsplash.com/photo-1508873696983-2df515122519?w=600';" 
-                 class="project-img" alt="NYC Collisions Report">
+            <img src="https://raw.githubusercontent.com/Mohamedshaltoot/NYC-Collisions-Report/main/nyc-overview.png.png" class="project-img" alt="NYC Collisions Report">
           </div>
           <div class="card-body">
             <h5 class="fw-bold mb-2">
@@ -343,25 +324,25 @@
 
     </div>
 
-    <!-- أزرار التواصل وأدوات الاتصال (في الأسفل) -->
-    <div class="contact-footer text-center">
-      <h5 class="fw-bold mb-3">تواصل معي (Contact & Professional Links)</h5>
-      <div class="d-flex flex-wrap justify-content-center gap-2">
-        <a href="https://github.com/Mohamedshaltoot/Mohamedshaltoot/raw/main/CV.pdf" target="_blank" class="btn btn-custom-orange px-3 py-2">
-          <i class="fa-solid fa-file-arrow-down me-1"></i> CV / السيرة الذاتية
-        </a>
-        <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-custom px-3 py-2">
-          <i class="fa-brands fa-linkedin text-primary me-1"></i> LinkedIn
-        </a>
-        <a href="https://wa.me/966554057993" target="_blank" class="btn btn-outline-custom px-3 py-2">
-          <i class="fa-brands fa-whatsapp text-success me-1"></i> واتساب
-        </a>
-        <a href="mailto:mohamed.edris.alessa@gmail.com" class="btn btn-outline-custom px-3 py-2">
-          <i class="fa-solid fa-envelope text-warning me-1"></i> إيميل
-        </a>
-        <a href="tel:+966554057993" class="btn btn-outline-custom px-3 py-2">
-          <i class="fa-solid fa-phone text-success me-1"></i> 0554057993
-        </a>
+    <!-- Contact Buttons Moved Here to the Bottom -->
+    <div class="row pt-4">
+      <div class="col-12">
+        <div class="profile-card text-center">
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <a href="https://github.com/Mohamedshaltoot/Mohamedshaltoot/raw/main/CV.pdf" target="_blank" class="btn btn-custom-orange px-3 py-2">
+              <i class="fa-solid fa-file-arrow-down me-1"></i> CV / السيرة الذاتية
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-brands fa-linkedin text-primary me-1"></i> LinkedIn
+            </a>
+            <a href="mailto:mohamed.edris.alessa@gmail.com" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-solid fa-envelope text-warning me-1"></i> إيميل
+            </a>
+            <a href="tel:+966554057993" class="btn btn-outline-custom px-3 py-2">
+              <i class="fa-solid fa-phone text-success me-1"></i> 0554057993
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
