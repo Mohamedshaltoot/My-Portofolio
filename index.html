@@ -141,13 +141,13 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-<!-- Featured Video Banner (Precise Share & Embed Shield) -->
-<div class="featured-video-card mb-5 overflow-hidden">
+<!-- Featured Video Banner (Unified Single-Box Design) -->
+<div class="featured-video-card mb-5 overflow-hidden rounded-4 shadow-lg" style="background-color: var(--card-bg); border: 1px solid rgba(255, 255, 255, 0.08);">
   <div class="row g-0 align-items-stretch">
     
-    <!-- Video Player Container with Full Right-Side Shield -->
-    <div class="col-lg-7 d-flex align-items-center justify-content-center p-3 position-relative" style="background-color: var(--card-bg);">
-      <div class="w-100 rounded-3 overflow-hidden position-relative shadow" style="padding-top: 56.25%; background: #000;">
+    <!-- Video Player Container with Right-Side Shield -->
+    <div class="col-lg-7 d-flex align-items-center justify-content-center p-3 position-relative">
+      <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="padding-top: 56.25%; background: #000;">
         
         <!-- Vimeo Iframe -->
         <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
@@ -157,22 +157,24 @@
                 title="Enterprise Sales & Credit Risk Dashboard">
         </iframe>
 
-        <!-- Shield covering the exact right-side column where Share, Embed & Watch Later appear -->
+        <!-- Right-Side Shield to block Share, Embed & Watch Later buttons -->
         <div class="position-absolute top-0 end-0 h-100" style="width: 55px; z-index: 99; background: transparent; cursor: default;" onclick="return false;"></div>
 
       </div>
     </div>
 
-    <!-- Details Section -->
-    <div class="col-lg-5 p-4 d-flex flex-column justify-content-center" style="background-color: var(--card-bg);">
-      <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2 align-self-start">🔥 Featured Demo Overview</span>
-      <h3 class="fw-bold text-light mb-2">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
-      <p class="text-secondary small mb-4">
-        Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
-      </p>
+    <!-- Unified Details Section (Single Box Layout with One Button) -->
+    <div class="col-lg-5 p-4 d-flex flex-column justify-content-between">
+      <div>
+        <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-3 align-self-start">🔥 Featured Demo Overview</span>
+        <h3 class="fw-bold text-light mb-3">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
+        <p class="text-secondary small mb-4" style="line-height: 1.7;">
+          Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
+        </p>
+      </div>
       
       <div>
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange w-100 text-center py-2 fw-bold">
           View Full Case Study 🔗
         </a>
       </div>
