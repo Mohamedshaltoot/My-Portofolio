@@ -6,9 +6,6 @@
   <title>Mohamed Edris | Data Analyst & Fabric Analytics Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- GLightbox CSS (Pop-up Video Viewer) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
   <style>
     :root {
@@ -102,12 +99,6 @@
       box-shadow: 0 10px 30px rgba(249, 115, 22, 0.15);
       overflow: hidden;
     }
-    .play-btn-pulse {
-      transition: transform 0.3s ease;
-    }
-    .play-btn-pulse:hover {
-      transform: scale(1.15);
-    }
   </style>
 </head>
 <body>
@@ -150,37 +141,35 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-      <!-- Featured Video Banner (Pop-up Lightbox Enabled) -->
+      <!-- Featured Video Banner (Direct Native HTML5 Video) -->
       <div class="featured-video-card mb-5">
-  <div class="row g-0 align-items-center">
-    
-    <div class="col-lg-7 position-relative text-center d-flex align-items-center justify-content-center bg-dark" style="min-height: 280px; max-height: 380px;">
-      <img src="./profile.jpg.jpeg" alt="Dashboard Demo Preview" class="w-100 h-100 object-fit-cover opacity-40" style="min-height: 280px; max-height: 380px;">
-      
-      <a href="./sales-report.mp4" class="glightbox play-btn-pulse position-absolute btn btn-orange rounded-circle p-3 shadow-lg" style="width: 75px; height: 75px; display: flex; align-items: center; justify-content: center;">
-        <i class="fas fa-play fs-2 ms-1 text-white"></i>
-      </a>
-    </div>
+        <div class="row g-0 align-items-center">
+          
+          <!-- Direct HTML5 Video Player -->
+          <div class="col-lg-7 bg-dark d-flex align-items-center justify-content-center">
+            <video controls preload="metadata" class="w-100 h-100 object-fit-cover" style="min-height: 280px; max-height: 380px;">
+              <source src="./sales-report.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-    <div class="col-lg-5 p-4">
-      <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2">🔥 Featured Demo Overview</span>
-      <h3 class="fw-bold text-light mb-2">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
-      <p class="text-secondary small mb-4">
-        Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
-      </p>
-      
-      <div class="d-flex gap-2">
-        <a href="./sales-report.mp4" class="glightbox btn-orange text-decoration-none">
-          <i class="fas fa-play me-1"></i> Watch Demo
-        </a>
-        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn btn-outline-info rounded-3">
-          Case Study 🔗
-        </a>
+          <!-- Video Card Details -->
+          <div class="col-lg-5 p-4">
+            <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2">🔥 Featured Demo Overview</span>
+            <h3 class="fw-bold text-light mb-2">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
+            <p class="text-secondary small mb-4">
+              Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
+            </p>
+            
+            <div>
+              <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">
+                View Full Case Study 🔗
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-
-  </div>
-</div>
 
       <!-- Projects Grid (Senior STAR Format) -->
       <div class="row g-4">
@@ -399,14 +388,5 @@
 
   </div>
 
-  <!-- GLightbox JavaScript Script -->
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: true,
-      autoplayVideos: true
-    });
-  </script>
 </body>
 </html>
