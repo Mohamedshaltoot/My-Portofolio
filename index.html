@@ -141,19 +141,22 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-<!-- Featured Video Banner (Exact Fit - No Crop, No Distortion) -->
+<!-- Featured Video Banner (Direct HTML5 Video - No Vimeo Logo, No Share, No Crop) -->
 <div class="featured-video-card mb-5 overflow-hidden">
   <div class="row g-0 align-items-stretch">
     
-    <!-- Video Player Container (Matched to Box Layout) -->
+    <!-- Video Player Container (Exact Box Fit) -->
     <div class="col-lg-7 d-flex align-items-center justify-content-center p-3" style="background-color: var(--card-bg);">
-      <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="padding-top: 56.25%; background: #000;">
-        <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
-                class="position-absolute top-0 start-0 w-100 h-100" 
-                style="border: 0;" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                title="Enterprise Sales & Credit Risk Dashboard">
-        </iframe>
+      <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="background: #000;">
+        <video class="w-100 h-100 d-block" 
+               controls 
+               playsinline 
+               preload="metadata"
+               style="object-fit: contain; max-height: 400px;">
+          <!-- ضع هنا رابط ملف الـ MP4 المباشر الخاص بك -->
+          <source src="assets/videos/sales-report.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
