@@ -141,31 +141,42 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-<!-- Featured Video Banner (Clean View Only with Protective Overlay) -->
+<!-- Featured Video Banner (Pure Video Only - No Borders, No Vimeo Logo) -->
 <div class="featured-video-card mb-5 overflow-hidden">
   <div class="row g-0 align-items-stretch">
     
-    <!-- Video Container with Layer Protection -->
-    <div class="col-lg-7 d-flex align-items-center justify-content-center p-2 position-relative" style="background-color: var(--card-bg);">
-      <div class="w-100 rounded-3 overflow-hidden position-relative" style="padding-top: 56.25%; background: #000;">
-        
-        <!-- Vimeo Iframe -->
-        <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
-                class="position-absolute top-0 start-0 w-100 h-100" 
-                style="border: 0;" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                title="Enterprise Sales & Credit Risk Dashboard">
-        </iframe>
+    <!-- Video Wrapper (Crops Out Vimeo Chrome & White Borders) -->
+    <div class="col-lg-7 position-relative overflow-hidden" style="min-height: 360px; background-color: #000;">
+      
+      <iframe src="https://player.vimeo.com/video/1225624692?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" 
+              class="position-absolute top-50 start-50 translate-middle" 
+              style="width: 115%; height: 115%; border: 0; pointer-events: none;" 
+              allow="autoplay; fullscreen" 
+              title="Enterprise Sales & Credit Risk Dashboard">
+      </iframe>
 
-        <!-- Top Right Blocking Layer (Hides/Blocks Share & Vimeo Links) -->
-        <div class="position-absolute top-0 end-0" style="width: 40%; height: 25%; z-index: 10; background: transparent;"></div>
-        
-        <!-- Top Left Blocking Layer (Hides Title/Profile Clicks) -->
-        <div class="position-absolute top-0 start-0" style="width: 50%; height: 25%; z-index: 10; background: transparent;"></div>
+      <!-- Interactive Play/Pause Mask overlay (Optional Click Guard) -->
+      <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 5; background: transparent;"></div>
 
+    </div>
+
+    <!-- Details Section -->
+    <div class="col-lg-5 p-4 d-flex flex-column justify-content-center" style="background-color: var(--card-bg);">
+      <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2 align-self-start">🔥 Featured Demo Overview</span>
+      <h3 class="fw-bold text-light mb-2">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
+      <p class="text-secondary small mb-4">
+        Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
+      </p>
+      
+      <div>
+        <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">
+          View Full Case Study 🔗
+        </a>
       </div>
     </div>
 
+  </div>
+</div>
     <!-- Details -->
     <div class="col-lg-5 p-4 d-flex flex-column justify-content-center">
       <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2 align-self-start">🔥 Featured Demo Overview</span>
