@@ -141,19 +141,28 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-<!-- Featured Video Banner (Clean View Only - Free Mode) -->
+<!-- Featured Video Banner (Clean View Only with Protective Overlay) -->
 <div class="featured-video-card mb-5 overflow-hidden">
   <div class="row g-0 align-items-stretch">
     
-    <!-- Video Player Container -->
-    <div class="col-lg-7 d-flex align-items-center justify-content-center p-2" style="background-color: var(--card-bg);">
+    <!-- Video Container with Layer Protection -->
+    <div class="col-lg-7 d-flex align-items-center justify-content-center p-2 position-relative" style="background-color: var(--card-bg);">
       <div class="w-100 rounded-3 overflow-hidden position-relative" style="padding-top: 56.25%; background: #000;">
-        <iframe src="https://player.vimeo.com/video/1225624692?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&dnt=1" 
+        
+        <!-- Vimeo Iframe -->
+        <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
                 class="position-absolute top-0 start-0 w-100 h-100" 
                 style="border: 0;" 
                 allow="autoplay; fullscreen; picture-in-picture" 
                 title="Enterprise Sales & Credit Risk Dashboard">
         </iframe>
+
+        <!-- Top Right Blocking Layer (Hides/Blocks Share & Vimeo Links) -->
+        <div class="position-absolute top-0 end-0" style="width: 40%; height: 25%; z-index: 10; background: transparent;"></div>
+        
+        <!-- Top Left Blocking Layer (Hides Title/Profile Clicks) -->
+        <div class="position-absolute top-0 start-0" style="width: 50%; height: 25%; z-index: 10; background: transparent;"></div>
+
       </div>
     </div>
 
