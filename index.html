@@ -91,6 +91,13 @@
       margin-bottom: 25px;
       color: var(--text-main);
     }
+    .featured-video-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid rgba(249, 115, 22, 0.4);
+      box-shadow: 0 10px 30px rgba(249, 115, 22, 0.15);
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -99,10 +106,9 @@
     <!-- Profile & Hero Section -->
     <div class="profile-card">
       <div class="row align-items-center text-center text-md-start">
-       <div class="col-md-3 text-center mb-3 mb-md-0">
-  <!-- صورتك الشخصية -->
-<img src="./profile.jpg.jpeg" alt="Mohamed Edris" class="profile-img">
-       </div>
+        <div class="col-md-3 text-center mb-3 mb-md-0">
+          <img src="./profile.jpg.jpeg" alt="Mohamed Edris" class="profile-img">
+        </div>
         <div class="col-md-9">
           <p class="hero-slogan mb-1">💡 ILLUMINATING HIDDEN INSIGHTS IN THE SHADOWS OF BIG DATA</p>
           <h1 class="fw-bold mb-1">MOHAMED EDRIS</h1>
@@ -133,6 +139,28 @@
     <!-- Projects Section -->
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
+
+      <!-- Featured Video Banner (Project Showcase) -->
+      <div class="featured-video-card mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-7 position-relative">
+            <video autoplay loop muted playsinline class="w-100 h-100 object-fit-cover" style="min-height: 280px; max-height: 380px;">
+              <source src="./Q1 Sales Report.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-5 p-4">
+            <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2">🔥 Featured Demo Overview</span>
+            <h3 class="fw-bold text-light mb-2">Enterprise Sales & Credit Risk Dashboard 📈⚡</h3>
+            <p class="text-secondary small mb-4">
+              Watch live interactions and architecture flow of this end-to-end Microsoft Fabric solution (Data Factory, Lakehouse, Direct Lake) giving leadership real-time visibility into revenue trends and credit risk exposure.
+            </p>
+            <a href="https://github.com/Mohamedshaltoot" target="_blank" class="btn-orange">View Full Case Study 🔗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
       <div class="row g-4">
 
         <!-- Project 1 -->
@@ -214,69 +242,69 @@
       </div>
     </div>
 
-<!-- Certifications Section -->
-<div class="mt-5">
-  <h3 class="section-title">📜 CERTIFICATIONS</h3>
-  <ul class="list-group list-group-flush bg-transparent">
-    
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥇 <b>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</b> - Aug 2026
-      </div>
-      <a href="https://learn.microsoft.com/users/me/credentials" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+    <!-- Certifications Section -->
+    <div class="mt-5">
+      <h3 class="section-title">📜 CERTIFICATIONS</h3>
+      <ul class="list-group list-group-flush bg-transparent">
+        
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥇 <b>Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)</b> - Aug 2026
+          </div>
+          <a href="https://learn.microsoft.com/users/me/credentials" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥇 <b>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</b> - Nov 2024
-      </div>
-      <a href="https://learn.microsoft.com/users/me/credentials" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥇 <b>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</b> - Nov 2024
+          </div>
+          <a href="https://learn.microsoft.com/users/me/credentials" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥇 <b>Oracle Database SQL Certified Associate</b> - Mar 2025
-      </div>
-      <a href="https://www.credly.com" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥇 <b>Oracle Database SQL Certified Associate</b> - Mar 2025
+          </div>
+          <a href="https://www.credly.com" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥇 <b>Project Management Professional (PMP)</b> - May 2024
-      </div>
-      <a href="https://www.credly.com" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥇 <b>Project Management Professional (PMP)</b> - May 2024
+          </div>
+          <a href="https://www.credly.com" target="_blank" class="btn btn-sm btn-outline-info rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥈 <b>ICDL Profile Certificate</b> (Advanced Excel, PowerPoint, Word) - Dec 2019
-      </div>
-      <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥈 <b>ICDL Profile Certificate</b> (Advanced Excel, PowerPoint, Word) - Dec 2019
+          </div>
+          <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-    <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
-      <div>
-        🥈 <b>ICDL Core Certificate</b> (IT Security, Spreadsheets, Databases) - Jun 2019
-      </div>
-      <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
-        View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
-      </a>
-    </li>
+        <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div>
+            🥈 <b>ICDL Core Certificate</b> (IT Security, Spreadsheets, Databases) - Jun 2019
+          </div>
+          <a href="#" target="_blank" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+            View Credential <i class="fas fa-external-link-alt ms-1 small"></i>
+          </a>
+        </li>
 
-  </ul>
-</div>
+      </ul>
+    </div>
 
-    <!-- Contact & Links Section (تمت الإضافة هنا في الأسفل) -->
+    <!-- Contact & Links Section -->
     <div class="mt-5">
       <h3 class="section-title">📫 CONNECT & RESUME</h3>
       <div class="profile-card text-center p-4">
