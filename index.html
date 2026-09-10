@@ -141,23 +141,20 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-<!-- Featured Video Banner (Pure Video Only - No Borders, No Vimeo Logo) -->
+<!-- Featured Video Banner (Exact Fit - No Crop, No Distortion) -->
 <div class="featured-video-card mb-5 overflow-hidden">
   <div class="row g-0 align-items-stretch">
     
-    <!-- Video Wrapper (Crops Out Vimeo Chrome & White Borders) -->
-    <div class="col-lg-7 position-relative overflow-hidden" style="min-height: 360px; background-color: #000;">
-      
-      <iframe src="https://player.vimeo.com/video/1225624692?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" 
-              class="position-absolute top-50 start-50 translate-middle" 
-              style="width: 115%; height: 115%; border: 0; pointer-events: none;" 
-              allow="autoplay; fullscreen" 
-              title="Enterprise Sales & Credit Risk Dashboard">
-      </iframe>
-
-      <!-- Interactive Play/Pause Mask overlay (Optional Click Guard) -->
-      <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 5; background: transparent;"></div>
-
+    <!-- Video Player Container (Matched to Box Layout) -->
+    <div class="col-lg-7 d-flex align-items-center justify-content-center p-3" style="background-color: var(--card-bg);">
+      <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="padding-top: 56.25%; background: #000;">
+        <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
+                class="position-absolute top-0 start-0 w-100 h-100" 
+                style="border: 0;" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                title="Enterprise Sales & Credit Risk Dashboard">
+        </iframe>
+      </div>
     </div>
 
     <!-- Details Section -->
