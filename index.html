@@ -59,7 +59,7 @@
       border-radius: 50%;
       object-fit: cover;
       display: block;
-      border: 3px solid var(--card-bg); /* Match card background for clean separation */
+      border: 3px solid var(--card-bg);
     }
 
     @keyframes gradientShift {
@@ -75,6 +75,33 @@
       50% {
         box-shadow: 0 0 25px rgba(0, 180, 216, 0.7);
       }
+    }
+
+    /* ------------------------------------------------ */
+    /* Floating WhatsApp Button Styles                  */
+    /* ------------------------------------------------ */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 55px;
+      height: 55px;
+      background-color: #25d366;
+      color: #ffffff !important;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.12) translateY(-3px);
+      box-shadow: 0 6px 22px rgba(37, 211, 102, 0.7);
     }
     /* ------------------------------------------------ */
 
@@ -177,7 +204,6 @@
     <div class="profile-card">
       <div class="row align-items-center text-center text-md-start">
         <div class="col-md-3 text-center mb-3 mb-md-0">
-          <!-- Animated Wrapper around Profile Image -->
           <div class="profile-img-wrapper">
             <img src="./profile.jpg.jpeg" alt="Mohamed Edris" class="profile-img">
           </div>
@@ -213,7 +239,7 @@
     <div class="mt-5">
       <h3 class="section-title">🚀 FEATURED DATA PROJECTS</h3>
 
-      <!-- 🛡️ Animated Data Privacy & Anonymization Callout -->
+      <!-- 🛡️ Animated Data Privacy Callout -->
       <div class="privacy-banner-animated mb-4 p-3 rounded-3 position-relative overflow-hidden">
         <div class="d-flex align-items-center gap-2 mb-1">
           <span class="fs-5 privacy-icon-pulse">🛡️</span>
@@ -224,29 +250,22 @@
         </p>
       </div>
 
-      <!-- Featured Project Card 1 (Enterprise Sales & Credit Risk Dashboard) -->
+      <!-- Featured Project Card 1 -->
       <div class="featured-video-card mb-5 overflow-hidden rounded-4 shadow-lg" style="background-color: var(--card-bg); border: 1px solid rgba(255, 255, 255, 0.08);">
         <div class="row g-0 align-items-stretch">
           
-          <!-- Video Player Container with Right-Side Shield -->
           <div class="col-lg-7 d-flex align-items-center justify-content-center p-3 position-relative">
             <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="padding-top: 56.25%; background: #000;">
-              
-              <!-- Vimeo Iframe -->
               <iframe src="https://player.vimeo.com/video/1225624692?badge=0&autopause=0&player_id=0&app_id=58479" 
                       class="position-absolute top-0 start-0 w-100 h-100" 
                       style="border: 0;" 
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
                       title="Enterprise Sales & Credit Risk Dashboard">
               </iframe>
-
-              <!-- Right-Side Shield -->
               <div class="position-absolute top-0 end-0 h-100" style="width: 55px; z-index: 99; background: transparent; cursor: default;" onclick="return false;"></div>
-
             </div>
           </div>
 
-          <!-- Unified Details Section -->
           <div class="col-lg-5 p-4 d-flex flex-column justify-content-between">
             <div>
               <span class="badge bg-info text-dark fw-bold px-3 py-2 rounded-pill mb-2 align-self-start">🔥 Featured Demo Overview</span>
@@ -293,16 +312,13 @@
           
           <div class="col-lg-7 d-flex align-items-center justify-content-center p-3 position-relative">
             <div class="w-100 rounded-3 overflow-hidden position-relative shadow-sm" style="padding-top: 56.25%; background: #000;">
-              
               <iframe src="https://player.vimeo.com/video/1226161050?badge=0&autopause=0&player_id=0&app_id=58479" 
                       class="position-absolute top-0 start-0 w-100 h-100" 
                       style="border: 0;" 
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
                       title="Workforce Analytics Stability Insights">
               </iframe>
-
               <div class="position-absolute top-0 end-0 h-100" style="width: 55px; z-index: 99; background: transparent; cursor: default;" onclick="return false;"></div>
-
             </div>
           </div>
 
@@ -522,6 +538,14 @@
           <a href="https://www.linkedin.com/in/mohamed-edris-ba261b212" target="_blank" class="btn btn-outline-info">
             <i class="fab fa-linkedin me-1"></i> LinkedIn Profile
           </a>
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/966XXXXXXXXX" target="_blank" class="btn btn-outline-success">
+            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+          </a>
+          <!-- Telegram Button -->
+          <a href="https://t.me/YourTelegramUsername" target="_blank" class="btn btn-outline-primary" style="border-color: #0088cc; color: #0088cc;">
+            <i class="fab fa-telegram-plane me-1"></i> Telegram
+          </a>
           <a href="mailto:Shaltoot000@gmail.com" class="btn btn-outline-light">
             <i class="fas fa-envelope me-1"></i> Email Me
           </a>
@@ -530,6 +554,11 @@
     </div>
 
   </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/966XXXXXXXXX" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
