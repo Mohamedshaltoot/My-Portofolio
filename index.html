@@ -37,14 +37,47 @@
       box-shadow: 0 10px 30px rgba(0, 180, 216, 0.15);
       border: 1px solid rgba(0, 180, 216, 0.3);
     }
+
+    /* ------------------------------------------------ */
+    /* Dynamic Profile Animated Glow Styles             */
+    /* ------------------------------------------------ */
+    .profile-img-wrapper {
+      position: relative;
+      width: 168px;
+      height: 168px;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(45deg, var(--accent-orange), var(--border-blue), #ea580c, #0077b6);
+      background-size: 300% 300%;
+      animation: gradientShift 4s ease infinite, pulseGlow 3s ease-in-out infinite;
+    }
+
     .profile-img {
-      width: 160px;
-      height: 160px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--accent-orange);
-      box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+      display: block;
+      border: 3px solid var(--card-bg); /* Match card background for clean separation */
     }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 25px rgba(0, 180, 216, 0.7);
+      }
+    }
+    /* ------------------------------------------------ */
+
     .badge-custom {
       background-color: rgba(0, 180, 216, 0.1);
       color: var(--border-blue);
@@ -144,7 +177,10 @@
     <div class="profile-card">
       <div class="row align-items-center text-center text-md-start">
         <div class="col-md-3 text-center mb-3 mb-md-0">
-          <img src="./profile.jpg.jpeg" alt="Mohamed Edris" class="profile-img">
+          <!-- Animated Wrapper around Profile Image -->
+          <div class="profile-img-wrapper">
+            <img src="./profile.jpg.jpeg" alt="Mohamed Edris" class="profile-img">
+          </div>
         </div>
         <div class="col-md-9">
           <p class="hero-slogan mb-1">💡 ILLUMINATING HIDDEN INSIGHTS IN THE SHADOWS OF BIG DATA</p>
@@ -164,7 +200,7 @@
       <h3 class="section-title">🛠️ MY TECH STACK</h3>
       <div class="d-flex flex-wrap">
         <span class="badge-custom">⚡ Microsoft Fabric (DP-600)</span>
-        <span class="badge-custom">📊 Power BI & DAX</span>
+        <span class="badge-custom">📊 Power BI & DAX, Data Modeling ,Power Query</span>
         <span class="badge-custom">🗄️ SQL Server & T-SQL</span>
         <span class="badge-custom">🏛️ Medallion Architecture</span>
         <span class="badge-custom">🔗 Direct Lake & Lakehouse</span>
